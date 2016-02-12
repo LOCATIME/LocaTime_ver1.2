@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+><!--
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="제품 메뉴" android:gravity="center_vertical"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+		android:drawableRight="@drawable/main_menu3_on"
+		android:drawablePadding="10px"
+	></TextView>
+-->
+	<ListView
+		android:layout_centerHorizontal="true"
+		android:id="@+id/categoryMain"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"></ListView>
+</RelativeLayout>
+

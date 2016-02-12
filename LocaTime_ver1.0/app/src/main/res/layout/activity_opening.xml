@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/opening7"
+    android:onClick="onImageClicked">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_marginBottom="225dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/locatime_letter_high"
+            android:orientation="horizontal"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/textL"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/locatime_letter_high"
+                android:gravity="bottom"
+                android:text="L"
+                android:textColor="@color/fontColor"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textO"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/locatime_letter_high"
+                android:text="O"
+                android:textColor="@color/fontColor"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textC"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/locatime_letter_high"
+                android:text="C"
+                android:textColor="@color/fontColor"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textA"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/locatime_letter_high"
+                android:text="A"
+                android:textColor="@color/fontColor"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textT"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/locatime_letter_high"
+                android:text="T"
+                android:textColor="@color/fontColor"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textI"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/locatime_letter_high"
+                android:text="I"
+                android:textColor="@color/fontColor"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textM"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/locatime_letter_high"
+                android:text="M"
+                android:textColor="@color/fontColor"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textE"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/locatime_letter_high"
+                android:text="E"
+                android:textColor="@color/fontColor"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:text="화면을 클릭하세요"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

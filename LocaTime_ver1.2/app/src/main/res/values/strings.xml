@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LocaTime_ver1.2</string>
+    <string name="server_url">http://locatime.cafe24.com/</string>
+</resources>

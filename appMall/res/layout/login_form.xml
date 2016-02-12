@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical"
+>
+	<include layout="@layout/top" android:id="@+id/top"
+		android:layout_width="fill_parent"
+		android:layout_height="30px" />
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/login_title"
+	></ImageView>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+	>
+		<ToggleButton
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:textOff="아이디로 인증하기" android:checked="true"
+			android:id="@+id/loginFormType" android:textOn="휴대전화로 인증하기"
+		></ToggleButton>
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+	>
+		<ScrollView android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:layout_above="@+id/agreementBtnLayout"
+			android:layout_margin="10dp"
+			android:id="@+id/loginFormScrollView"
+			android:background="@drawable/round_box_bg_white"
+			android:padding="8dp"
+		>
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+			>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+				>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="휴대전화 : "
+					></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						android:inputType="phone" android:id="@+id/loginFormTEL"
+					></EditText>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+				>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="아이디 : "
+					></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						android:imeOptions="actionNext"
+						android:inputType="text|textNoSuggestions"
+						android:maxLength="10" android:id="@+id/loginFormID"
+					></EditText>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+				>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="암호 : "
+					></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						android:inputType="textPassword" android:id="@+id/loginFormPWD"
+					></EditText>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:gravity="center"
+					android:layout_height="fill_parent"
+				>
+					<ImageView android:id="@+id/ImageView01"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/login_form_img"
+					></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:gravity="center"
+			android:layout_alignParentBottom="true"
+			android:id="@+id/agreementBtnLayout"
+		>
+			<ImageButton android:keepScreenOn="true"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:background="@drawable/login_form_submit"
+				android:id="@+id/loginFormOKBtn"
+			></ImageButton>
+			<ImageButton android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:background="@drawable/login_form_cancel"
+				android:id="@+id/loginFormCancelBtn"
+			></ImageButton>
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

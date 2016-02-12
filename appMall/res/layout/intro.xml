@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bg"
+	android:gravity="center" android:layoutAnimation="@anim/layout_anim"
+>
+	<ImageButton android:background="#00000000"
+		android:id="@+id/img_app_mark" android:src="@drawable/app_mark"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:drawingCacheQuality="high" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Android App-Site" android:gravity="center"
+		android:textColor="#367b11" android:textSize="18dp"
+		android:textStyle="bold" android:typeface="sans"
+		android:paddingTop="5dp" android:paddingBottom="5dp"
+		android:shadowColor="#999999"
+		android:shadowRadius="5" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Think of new generation\n새로운 생각을 하는 사람들"
+		android:gravity="center" android:textColor="#e03001"
+		android:textSize="12dp"
+		android:lineSpacingExtra="3dp"
+		android:textStyle="bold|italic" />
+	<ImageButton android:background="#00000000"
+		android:id="@+id/anim_bg" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center" />
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="아울연구소(OWLLAB) 
+\n♕ 이두진 소장 / 연구원: 권정섭,최대진,정재훈
+\n- http://www.owllab.com  owl@owl.co.kr  
+\n☏ 000-0000-0000"
+		android:textColor="#555555" android:textSize="12dp"
+		android:autoLink="all" />
+	-->
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="right" android:layout_width="wrap_content"
+	>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/companyMapBtn" android:text="@string/company_address"
+			android:textColor="#0000ff" android:textSize="12dp"
+			android:paddingRight="5dp" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/GoogleMap_btn" android:text="[구글맵] "
+			android:textColor="#0000ff" android:textSize="12dp"
+			android:paddingRight="5dp" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/video_btn" android:textColor="#0000ff"
+			android:textSize="12dp" android:text="[홍보영상] " />
+	</LinearLayout>
+</LinearLayout>

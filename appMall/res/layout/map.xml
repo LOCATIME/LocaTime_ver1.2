@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bg"
+>
+	<include layout="@layout/top" android:id="@+id/top"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<LinearLayout android:layout_height="50px"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal"
+	>
+		<EditText android:layout_height="fill_parent"
+			android:layout_width="200px" android:id="@+id/mapAddress"
+			android:singleLine="true"
+		></EditText>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:id="@+id/mapSearchBtn"
+			android:width="80px" android:text="주소검색"
+		></Button>
+	</LinearLayout>
+	<com.google.android.maps.MapView
+		android:id="@+id/maps" android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:clickable="true"
+		android:apiKey="0DEmg7hR9W7iyUcwjRvh6Y-rvPLHIoCqqLybCFg" />
+</LinearLayout>

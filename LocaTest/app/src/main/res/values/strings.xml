@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LocaTest</string>
+    <string name="server_url">http://70.12.110.79/</string>
+</resources>

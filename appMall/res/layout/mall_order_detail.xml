@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+>
+	<ListView
+		android:layout_centerHorizontal="true"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent" android:id="@+id/listView"
+		android:layout_above="@+id/buttonLayout"
+		android:layout_below="@+id/top"
+	>
+	</ListView>
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/buttonLayout"
+		android:layout_width="fill_parent"
+		android:gravity="center"
+		android:layout_alignParentBottom="true"
+		android:orientation="vertical"
+	>
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:padding="5dp" android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:gravity="center"
+		>
+			<TextView android:layout_height="wrap_content"
+				android:id="@+id/deliveryPrice" android:text="※ 배송료 : "
+				android:layout_width="fill_parent"
+			></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:id="@+id/totalPrice" android:text="※ 합계금액 : "
+				android:layout_width="fill_parent"
+			></TextView>
+			<Button android:layout_height="wrap_content"
+				android:id="@+id/closeBtn" android:text="닫기"
+				android:layout_width="fill_parent"
+				android:layout_marginTop="5dp"
+			></Button>
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

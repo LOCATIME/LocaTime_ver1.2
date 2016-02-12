@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="defaultScreen" parent="android:Theme.Light">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:colorForeground">#fff</item>
+		<item name="android:textAppearance">@style/defaultTextAppearance
+		</item>
+	</style>
+	<style name="defaultEditText">
+		<item name="android:focusable">true</item>
+		<item name="android:focusableInTouchMode">true</item>
+		<item name="android:clickable">true</item>
+		<item name="android:background">@android:drawable/edit_text
+		</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceMediumInverse
+		</item>
+		<item name="android:textColor">@android:color/primary_text_light
+		</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+	<style name="defaultDialogText">
+		<item name="android:textSize">12sp</item>
+		<item name="android:textColor">#ff000000</item>
+	</style>
+	<style name="category" parent="android:Theme.Light">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@drawable/bg</item>
+		<item name="android:listViewStyle">@style/categoryListView</item>
+		<item name="android:textAppearance">@style/defaultTextAppearance
+		</item>
+	</style>
+	<style name="categoryListView"
+		parent="@android:style/Widget.ListView"
+	>
+		<item name="android:background">@android:color/transparent
+		</item>
+		<item name="android:divider">#c8c8c8</item>
+		<item name="android:dividerHeight">1px</item>
+	</style>
+	<style name="noticeListMain" parent="android:Theme.Light">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@drawable/bg</item>
+		<item name="android:listViewStyle">@style/noticeMainListView</item>
+		<item name="android:textAppearance">@style/defaultTextAppearance
+		</item>
+	</style>
+	<style name="noticeMainListView"
+		parent="@android:style/Widget.ListView"
+	>
+		<item name="android:background">@android:color/transparent
+		</item>
+		<item name="android:divider">#c8c8c8</item>
+		<item name="android:dividerHeight">1px</item>
+		<!--
+			<item
+			name="android:listSelector">@android:color/transparent</item>
+			<item
+			name="android:listSelector">@drawable/list_selector</item>
+			<item
+			name="android:drawSelectorOnTop">true</item>
+		-->
+	</style>
+	<style name="defaultTextAppearance" parent="@android:style/TextAppearance">
+		<item name="android:textSize">12dp</item>
+		<item name="android:textColor">#333</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="subjectText" parent="@android:style/TextAppearance">
+		<item name="android:textSize">12px</item>
+		<item name="android:textColor">#333</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="regDateText" parent="@android:style/TextAppearance">
+		<item name="android:textSize">10px</item>
+		<item name="android:textColor">#666666</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="noticeDialogText">
+		<item name="android:textSize">12sp</item>
+		<item name="android:textColor">#ff000000</item>
+	</style>
+	<style name="noticeDialogText.subject">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="noticeDialogText.info">
+		<item name="android:textSize">10sp</item>
+		<item name="android:textColor">#e4e4e4</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+</resources>

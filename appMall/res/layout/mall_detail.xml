@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+>
+	<include layout="@layout/top" android:id="@+id/top"
+		android:layout_width="fill_parent"
+		android:layout_height="30px" />
+	<ScrollView android:layout_height="fill_parent"
+		android:layout_width="fill_parent" android:id="@+id/scrollView"
+		android:fadeScrollbars="false"
+	>
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:padding="10dp"
+		>
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:background="@drawable/round_box_bg_white"
+				android:orientation="vertical"
+				android:padding="8dp" android:layout_width="fill_parent"
+			>
+				<TextView android:id="@+id/prodName"
+					android:text="상품명" android:layout_height="wrap_content"
+					android:textColor="#000000" android:textSize="14dp"
+					android:layout_width="wrap_content"
+				></TextView>
+				<TextView android:id="@+id/prodSort"
+					android:text="분류명" android:layout_height="wrap_content"
+					android:textSize="12dp" android:layout_width="wrap_content"
+				></TextView>
+			</LinearLayout>
+			<ImageView android:src="@drawable/blank"
+				android:id="@+id/prodImg" android:scaleType="fitXY"
+				android:layout_gravity="center"
+				android:layout_margin="5dp"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+			></ImageView>
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="vertical"
+				android:background="@drawable/round_box_bg_white"
+				android:padding="8dp"
+			>
+				<TextView android:id="@+id/prodPriceText"
+					android:layout_height="wrap_content"
+					android:textSize="12dp" android:text="가격: 00,000원"
+					android:padding="5dp" android:layout_width="wrap_content"
+				></TextView>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:id="@+id/formLayout" android:padding="5dp"
+					android:gravity="center_vertical"
+				>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="12dp" android:text="주문수량 : "
+					></TextView>
+					<Spinner android:layout_height="wrap_content"
+						android:id="@+id/ea" android:layout_width="fill_parent"
+						android:prompt="@string/ea_spinner_prompt"
+					></Spinner>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:id="@+id/buttonLayout"
+					android:layout_width="fill_parent"
+					android:gravity="center"
+					android:layout_margin="5dp"
+				>
+					<ImageButton
+						android:layout_alignParentRight="true"
+						android:background="@drawable/mall_cart_btn"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/mallCartBtn"
+					></ImageButton>
+					<ImageButton
+						android:layout_alignParentRight="true"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/mallListBtn"
+						android:background="@drawable/mall_continue_btn"
+					></ImageButton>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="vertical"
+				android:background="@drawable/round_box_bg_white"
+				android:padding="8dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+			>
+				<LinearLayout android:id="@+id/ratingLayout"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:padding="5dp"
+				>
+					<TextView android:id="@+id/rating"
+						android:text="★★★★★" android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textSize="12dp"
+					></TextView>
+					<TextView android:id="@+id/ratingText"
+						android:text="99,999 Rating"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_marginLeft="5dp"
+						android:textSize="12dp"
+					></TextView>
+				</LinearLayout>
+				<TextView android:id="@+id/prodBrief"
+					android:text="요약정보" android:layout_height="wrap_content"
+					android:textColor="#666666" android:textSize="12dp"
+					android:padding="5dp" android:layout_width="wrap_content"
+				></TextView>
+				<TextView android:layout_height="wrap_content"
+					android:textColor="#666666" android:textSize="12dp"
+					android:id="@+id/prodInfo" android:padding="5dp"
+					android:text="상세정보" android:layout_width="wrap_content"
+				></TextView>
+			</LinearLayout>
+			<Button android:layout_height="wrap_content"
+				android:id="@+id/webInfoBtn"
+				android:layout_width="fill_parent"
+				android:text="더 상세한 웹 상품정보 보기"
+			></Button>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="default_text_color">#333</color>
+	<color name="list_row_bg">#e8f2ff</color>
+	<color name="list_row_bg_alt">#f8f8f8</color>
+	<drawable name="list_normal">#96FFFFFF</drawable>
+  <drawable name="list_active">#ffc500</drawable>
+  <drawable name="list_pressed">#CA000000</drawable>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/row"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:padding="5px" android:layout_height="fill_parent"
+>
+	<ImageView android:src="@drawable/blank"
+		android:id="@+id/prodImg" android:scaleType="fitXY"
+		android:layout_width="80dp"
+		android:layout_height="110dp"
+	></ImageView>
+	<LinearLayout android:id="@+id/prodInfoLayout"
+		android:layout_toRightOf="@+id/prodImg"
+		android:layout_width="fill_parent"
+		android:layout_marginLeft="5dp"
+		android:orientation="vertical"
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@+id/detailBtn"
+	>
+		<TextView android:id="@+id/prodName"
+			android:text="상품명" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000" android:textSize="14dp"
+			android:ellipsize="end"
+		></TextView>
+		<TextView android:id="@+id/prodSort"
+			android:text="분류명" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:ellipsize="end" android:lines="1"
+			android:textSize="12dp"
+		></TextView>
+		<TextView android:id="@+id/prodPriceText"
+			android:text="- 가격: 00,000원"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#666666" android:textSize="12dp"
+		></TextView>
+		<TextView android:id="@+id/prodBrief"
+			android:text="요약정보" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#666666" android:textSize="12dp"
+			android:maxLines="3" android:ellipsize="end"
+		></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/ratingLayout"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_below="@+id/prodInfoLayout"
+		android:layout_toRightOf="@+id/prodImg"
+		android:layout_marginLeft="5dp"
+		android:layout_toLeftOf="@+id/detailBtn"
+	>
+		<TextView android:id="@+id/rating"
+			android:text="★★★★★" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textSize="12dp"
+		></TextView>
+		<TextView android:id="@+id/ratingText"
+			android:text="99,999 Rating"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:textSize="12dp"
+		></TextView>
+	</LinearLayout>
+	<ImageButton 
+		android:layout_alignParentRight="true"
+		android:background="@drawable/ic_menu_forward"
+		android:layout_width="30dp" android:id="@+id/detailBtn"
+		android:layout_centerVertical="true"
+		android:layout_height="50dp"
+	></ImageButton>
+</RelativeLayout>

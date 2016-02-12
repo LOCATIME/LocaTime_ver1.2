@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+>
+	<WebView android:id="@+id/mainWebView"
+		android:layout_height="fill_parent" android:layout_width="fill_parent"></WebView><!--
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="웹 콘텐츠 - HTML" android:gravity="center_vertical"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+		android:drawableTop="@drawable/main_menu2_on"
+		android:drawablePadding="10px"
+	></TextView>
+
+--></RelativeLayout>
+

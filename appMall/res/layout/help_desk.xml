@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical" android:gravity="top"
+>
+	<include layout="@layout/top" android:id="@+id/top"
+		android:layout_width="fill_parent"
+		android:layout_height="30px" />
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/help_desk"
+	></ImageView>
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_width="fill_parent" android:id="@+id/helpCopyLayout"
+		android:paddingLeft="15dp" android:paddingRight="15dp"
+	>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="자세한 안내가 필요하시면, 아래 버튼을 이용하세요. "
+			android:textColor="#666666"
+		></TextView>
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+	>
+		<ScrollView android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:layout_margin="10dp" android:id="@+id/userFormScrollView"
+			android:background="@drawable/round_box_bg_white"
+			android:padding="8dp" android:fadeScrollbars="false"
+			android:layout_below="@+id/userFormTitleLayout"
+		>
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+			>
+				<Button android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:id="@+id/findPassBtn" android:text="휴대전화로 암호를 찾습니다."
+				></Button>
+				<Button android:layout_height="wrap_content"
+					android:id="@+id/helpSMSBtn" android:text="SMS문자로 문의합니다."
+					android:layout_width="fill_parent"
+				></Button>
+				<Button android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:id="@+id/helpTelBtn" android:text="음성통화로 문의합니다."
+				></Button>
+				<Button android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:id="@+id/helpEmailBtn" android:text="이메일로 문의합니다."
+				></Button>
+				<Button android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:id="@+id/helpWebBtn" android:text="웹사이트에 연결합니다."
+				></Button>
+				<Button android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:id="@+id/helpMapBtn" android:text="가까운 고객센터 가는 길을 찾습니다."
+				></Button>
+			</LinearLayout>
+		</ScrollView>
+	</RelativeLayout>
+</LinearLayout>

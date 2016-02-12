@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/row"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:padding="5px" android:layout_height="fill_parent"
+>
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical"
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@+id/detailBtn"
+		android:id="@+id/infoLayout"
+	>
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000" android:textSize="14dp"
+			android:id="@+id/orderTitle" android:text="주문일자 대표상품명외 X건"
+		></TextView>
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="12dp" android:id="@+id/orderContent"
+			android:text="결제금액 / 연락처 / 우편번호 주소 / 입금계좌 / 입금자  "
+		></TextView>
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:id="@+id/formLayout"
+			android:gravity="center_vertical"
+		>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12dp" android:text="처리상태 : "
+			></TextView>
+			<Spinner android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/stateSpinner" 
+				android:prompt="@string/state_spinner_prompt"
+			></Spinner>
+		</LinearLayout>
+	</LinearLayout>
+	<ImageButton
+		android:layout_alignParentRight="true"
+		android:background="@drawable/ic_menu_forward"
+		android:layout_width="30dp" android:id="@+id/detailBtn"
+		android:layout_centerVertical="true"
+		android:layout_height="50dp"
+	></ImageButton>
+</RelativeLayout>

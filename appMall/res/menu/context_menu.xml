@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/goMain"
+		android:title="메인화면"
+	></item>
+	<item android:id="@+id/goCompanyMap"
+		android:title="찾아오는 길"
+	></item>
+	<item android:id="@+id/goGoogleMap"
+		android:title="구글맵"
+	></item>
+	<item android:id="@+id/goOwlVideo"
+		android:title="홍보영상"
+	></item>
+
+</menu>

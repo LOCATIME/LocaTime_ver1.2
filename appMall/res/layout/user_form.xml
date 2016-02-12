@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical" android:gravity="top"
+>
+	<include layout="@layout/top" android:id="@+id/top"
+		android:layout_width="fill_parent"
+		android:layout_height="30px" />
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/useradd_newuser_title"
+		android:id="@+id/userFormTitle"
+	></ImageView>
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/userFormTitleLayout"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+	>
+		<ImageView android:src="@drawable/useradd_adduser_copy1"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+		></ImageView>
+		<ImageView android:layout_width="wrap_content"
+			android:src="@drawable/useradd_adduser_copy2"
+			android:layout_height="wrap_content"
+		></ImageView>
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+	>
+		<ScrollView android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:layout_above="@+id/agreementBtnLayout"
+			android:layout_margin="10dp" android:id="@+id/userFormScrollView"
+			android:background="@drawable/round_box_bg_white"
+			android:padding="8dp" android:fadeScrollbars="false"
+			android:layout_below="@+id/userFormTitleLayout"
+		>
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+			>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+				>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="*" android:textColor="#ff0000"
+					></TextView>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="휴대전화 : "
+					></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						android:id="@+id/userFormTEL"
+						android:inputType="phone"
+					></EditText>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+				>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="*" android:textColor="#ff0000"
+					></TextView>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="아이디 : "
+					></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:id="@+id/userFormID"
+						android:layout_width="fill_parent"
+						android:imeOptions="actionNext"
+						android:inputType="text|textNoSuggestions"
+						android:maxLength="10"
+					></EditText>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+				>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="*" android:textColor="#ff0000"
+					></TextView>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="암호 : "
+					></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						android:id="@+id/userFormPWD"
+						android:inputType="textPassword"
+						android:text="2222"
+					></EditText>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+				>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="*" android:textColor="#ff0000"
+					></TextView>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="별명 : "
+					></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						android:imeOptions="actionNext" android:id="@+id/userFormALIAS"
+						android:maxLength="20"
+					></EditText>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+				>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="*" android:textColor="#ff0000"
+					></TextView>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="이름 : "
+					></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						android:id="@+id/userFormNAME"
+						android:imeOptions="actionNext"
+					></EditText>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+				>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#ff0000" android:text="  "
+					></TextView>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="이메일 : "
+					></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						android:id="@+id/userFormEMAIL"
+						android:inputType="textEmailAddress"
+					></EditText>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+				>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="#ff0000" android:text="  "
+					></TextView>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="우편번호 : "
+					></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						android:id="@+id/userFormZIPCODE"
+						android:inputType="textPostalAddress|number"
+					></EditText>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:orientation="vertical"
+				>
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+					>
+						<TextView android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="*" android:textColor="#ff0000"
+						></TextView>
+						<TextView android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="주소 : "
+						></TextView>
+					</LinearLayout>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						android:id="@+id/userFormADDRESS"
+					></EditText>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:gravity="center"
+			android:layout_alignParentBottom="true"
+			android:id="@+id/agreementBtnLayout"
+		>
+			<ImageButton android:keepScreenOn="true"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:background="@drawable/useradd_adduser_button_ok"
+				android:id="@+id/userFormOKBtn"
+			></ImageButton>
+			<ImageButton android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:background="@drawable/useradd_adduser_button_cancel"
+				android:id="@+id/userFormCancelBtn"
+			></ImageButton>
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

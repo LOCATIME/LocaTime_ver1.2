@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:padding="5px" android:id="@+id/notice_row"
+	android:layout_height="wrap_content"
+>
+	<TextView android:id="@+id/notice_subject" android:text="제목"
+		style="@style/subjectText" android:maxLines="4" android:layout_width="fill_parent"
+		android:layout_toLeftOf="@+id/noticeDetailBtn" android:layout_height="wrap_content"
+		android:lines="4" android:ellipsize="end"
+	></TextView>
+	<ImageButton android:layout_alignParentRight="true" android:id="@+id/noticeDetailBtn"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:background="#00ffffff" android:src="@android:drawable/ic_menu_info_details"
+	></ImageButton>
+	<TextView android:layout_height="wrap_content" android:id="@+id/notice_reg_date"
+		android:text="등록일" style="@style/regDateText" android:layout_alignParentRight="true"
+		android:layout_width="wrap_content" android:layout_below="@+id/noticeDetailBtn"
+	></TextView>
+</RelativeLayout>

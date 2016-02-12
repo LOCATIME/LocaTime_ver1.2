@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bg"
+android:orientation="vertical">
+	<include layout="@layout/top" android:id="@+id/top"
+		android:layout_width="fill_parent" android:layout_height="30px"/>
+	<FrameLayout 
+		android:id="@+id/mainLayoutFrame"
+		android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+		<LinearLayout android:layout_below="@+id/top"
+			android:layout_width="fill_parent"
+			android:background="@drawable/main_banner_bg"
+			android:id="@+id/mainLayoutBanner" android:layout_height="100px">
+			<ImageView android:layout_below="@+id/top"
+				android:layout_height="100px" android:layout_width="317px" android:background="@drawable/main_banner_317x100"></ImageView>
+		</LinearLayout>
+		<LinearLayout android:layout_below="@+id/mainLayoutBanner"
+			android:id="@+id/mainLayoutMenu"
+			android:layout_width="fill_parent"
+			android:background="@drawable/main_menu_bg"
+			android:gravity="right" android:layout_gravity="bottom"
+		android:layout_height="30px">
+			<ImageButton android:id="@+id/mainMenu1"
+				android:background="@drawable/main_menu1"
+			android:layout_width="95px" android:layout_height="30px"></ImageButton>
+			<ImageButton android:id="@+id/mainMenu2"
+				android:background="@drawable/main_menu2"
+			android:layout_height="30px" android:layout_width="95px"></ImageButton>
+			<ImageButton android:id="@+id/mainMenu3"
+				android:background="@drawable/main_menu3"
+			android:layout_height="30px" android:layout_width="95px"></ImageButton>
+		</LinearLayout>
+	</FrameLayout>
+	<FrameLayout android:layout_below="@+id/mainLayoutFrame"
+		android:id="@+id/mainLayoutContent"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+	>
+		<include layout="@layout/main_tab1"
+			android:id="@+id/main_tab1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+		<include layout="@layout/main_tab2"
+			android:id="@+id/main_tab2"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+		<include layout="@layout/main_tab3"
+			android:id="@+id/main_tab3"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+	</FrameLayout>
+</LinearLayout>

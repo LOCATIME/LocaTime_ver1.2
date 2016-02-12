@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="bank">
+		<item>신한은행 000-00-000000 (주)법인</item>
+		<item>농협 000-00-000000 개인</item>
+	</string-array>
+</resources>
